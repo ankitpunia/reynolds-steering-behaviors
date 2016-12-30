@@ -18,13 +18,13 @@ export default class World {
       applyCohesion: true,
       mouseAttracts: false,
       list: ['free motion', 'mouse', 'flowField', 'path'],
-      getCurrent: function() {
+      getCurrent() {
         return this.list[this.currentIndex];
       },
-      toggle: function() {
+      toggle() {
         this.currentIndex = (this.currentIndex + 1) % this.list.length;
       },
-      toggleProperty: function(property) {
+      toggleProperty(property) {
         this[property] = !this[property];
       }
     };
